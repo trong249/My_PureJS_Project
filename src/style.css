@@ -1,0 +1,388 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+/* ************************************NAVBAR************************************* */
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+nav.active {
+    background-color: rgb(33, 46, 58);
+    box-shadow: 0px 0px 20px #6ba3bd;   
+}
+
+nav .logo a{
+    font-size:40px;
+    font-weight:700
+}
+nav>.container{
+    display: flex;
+    justify-content: space-between;
+}
+nav>.container .menu{
+    width: 40%;
+    min-width: 400px;
+    margin-left:15%
+}
+nav>.container ul {
+    display: flex;
+    width: 100%;
+    justify-content:space-between   
+}
+nav li {
+    color: rgb(255, 246, 246);
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav li a:hover{
+    border-bottom:2px solid rgb(255, 246, 246);
+}
+nav li a.active{
+    border-bottom:2px solid rgb(255, 246, 246);
+}
+nav a{
+    color: rgb(255, 246, 246);
+    font-size: 20px;
+    line-height: 50px;
+    transition: all 0.2s;
+}
+nav .fa-bars, nav .fa-times{
+    color: rgb(255, 246, 246);
+    font-size: 30px;
+    line-height: 70px;
+    display: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 770px) {
+    nav .fa-bars, nav .fa-times {
+        display: block;
+    }
+    nav .fa-times {
+        position: absolute;
+        top: 0px;
+        right: 80px;
+    }
+    nav .menu ul{
+        flex-direction: column;
+    }
+    nav .menu {
+        position: fixed;
+        right: 0px;
+        z-index: 3;
+        background-color: rgb(33, 46, 58);
+        height: 100%;
+        padding-left: 50px;
+        padding-top: 50px;
+        width: 40%;
+        transform: translateX(110%);
+        transition: all 0.5s;
+        box-shadow: 0px 0px 20px #6ba3bd;   
+    }
+    nav .menu.active {
+        transform: translateX(10%);
+    }
+}
+
+
+
+
+/**************************** GET INPUT BOX ******************************/
+.virtual-section{
+    width: 30%;
+    min-width: 300px;
+    height: 0px;
+    position: fixed;
+    top:85px;
+    left: 35%;
+    z-index: 1;
+}
+.virtual-section .getItem, .updateItem{
+    width: 100%;
+    padding: 25px;
+    background-color:rgb(33, 46, 58);
+    box-shadow: 0px 0px 20px #539ABA;
+    border-radius:5px;
+    color:white;
+    transform: translateY(-230%);
+    overflow-y: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.virtual-section .getItem.active{
+    transform: translateY(5%);
+    opacity: 1;
+}
+.virtual-section .updateItem.active {
+    transform: translateY(-90%);
+    opacity: 1;
+}
+.virtual-section .getItem .header, .updateItem .header{
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid
+}
+.virtual-section .getItem .header i,.updateItem .header i{
+    position: absolute;
+    top: -40px;
+    right:0px;
+    font-size:30px;
+    cursor: pointer;
+}
+.virtual-section .getItem .header p,.updateItem .header p{
+    font-size:30px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px
+}
+.virtual-section .getItem label,.updateItem label{
+    display: inline-block;
+    margin-top:15px;
+    font-size:20px
+}
+.virtual-section .getItem input,.updateItem input{
+    display: block;
+    width:100%;
+    line-height:20px;
+    padding-left: 10px;
+}
+.virtual-section .getItem img,.updateItem img {
+    display: block;
+    min-width: 30%;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    height: 100px;
+}
+.virtual-section .getItem button, .updateItem button{
+    height:30px;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 770px) {
+    .virtual-section{
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .virtual-section{
+        left: 15%;
+    }
+}
+/* ************************************NAVBAR-DONE************************************* */
+
+
+
+/* ************************************SECTION-HOME************************************ */
+section.home {
+    width: 100%;
+    height: 100vh;
+    z-index: -9;
+    color: #D0E6F5;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+section.home .swiper{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(125, 125, 138);
+    position: relative;
+    z-index: 0;
+}
+section.home .swiper img{
+    width: 100%;
+    height: 100vh;
+}
+section.home .container{
+    position: relative;
+}
+section.home .social-icons{
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+}
+section.home .box-infor{
+    position: absolute;
+    bottom: 250px;
+    left: 5px;
+    position: relative;
+    z-index: 0;
+}
+section.home a{
+    color: #D0E6F5;
+    font-size:20px;
+}
+section.home button{
+    background-color: #D0E6F5;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    position:absolute;
+}
+section.home button:hover {
+    padding: 11px 16px;
+}
+@media only screen and (max-width: 770px){
+    section.home .social-icons{
+        bottom: 160px;
+    }
+}
+
+
+/* ************************************SECTION-HOME************************************ */
+
+/* ************************************SECTION-PRODUCT************************************ */
+.products{
+    margin-bottom: 50px;
+}
+.products .container:nth-child(2){
+    height: 520px;
+}
+.products .row{
+    margin: 20px 0px;
+}
+.products .element{
+    position: relative;
+    min-height: 150px;
+}
+.products .element .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.products .element img{
+    width: 100%;
+    height: 100%;
+}
+.products .element .content {
+    padding: 7px 5px;
+    background-color: rgba(0,0,0,0.4);;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.products .element .editIcon{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.products .element .editIcon i{
+    cursor: pointer;
+    display: inline-block;
+    margin-left:10px;
+}
+/* 888888888888888888888888888888888888888 */
+.products .container:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
+.products .pagination ul{
+    display: flex;
+}
+.products .pagination ul li{
+    font-size: 20px;
+    margin: 0px 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.products .pagination ul li.num{
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+.products .pagination ul li.num.active{
+    color: #fff;
+    background-color: rgb(33, 46, 58);
+}
+@media only screen and (max-width: 770px){
+   .products .pagination ul li{
+    font-size: 20px;
+    margin: 0px 5px;
+    line-height: 30px;
+    cursor: pointer;
+    }
+}
+/* ************************************SECTION-PRODUCT************************************ */
+
+
+/* ************************************SECTION-ABOUT************************************ */
+.about{
+    background-color: rgb(33, 46, 58);;
+    box-shadow: 0px 0px 20px #6ba3bd; 
+    padding-bottom: 10px;
+    
+    font-size: 18px;
+}
+
+.about li a{
+    display: inline-block;
+    color:hsla(0,0%,100%,.7);
+    margin: 10px 0px;
+}
+.about a:hover{
+    color: #fff;
+}
+.about h2{
+    font-size: 25px;
+    color: #fff;
+    margin: 30px auto;
+}
+.about p{
+    margin: 10px 0px;
+    color:hsla(0,0%,100%,.7);
+}
+.about input {
+    display: block;
+    line-height: 25px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.about button{
+    background-color: #D0E6F5;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+#cc{
+    margin-top: 60px;
+    text-align: center;
+}
+@media only screen and (max-width: 575px){
+    .about .col-xs-12{
+        text-align: center;
+    }   
+    .about button{
+        width: 100%;
+    }
+}
+
+/* ************************************SECTION-ABOUT************************************ */

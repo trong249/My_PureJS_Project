@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-website</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
+    <script src="https://kit.fontawesome.com/8f65ebef09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav >
+        <div class="container">
+            <div class="logo">
+                <a href="">#Logo</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class='add'><i class="fas fa-plus-square"> Add</i></li>
+                </ul>
+                <i class="fas fa-times"></i>
+            </div>
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav> 
+<!-- ---------------------------------NAVBAR---------------------------------------- -->
+
+<!-- ---------------------------------INPUT-BOX------------------------------------------>   
+    <div class="virtual-section">
+        <div class="getItem">
+            <div class="header">
+                <p>NEW ITEM</p>
+                <i class="fas fa-times"></i>
+            </div>
+            <form>
+                    <label for="name">Name:</label>
+                    <input id='name' type="text" placeholder="...">
+                
+                    <label for="price" style="margin-right: 20px">Price:</label>
+                    <input id='price' type="text" placeholder="...">
+
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <button class="randomAdd">Random Img</button>
+                    <button id='addButton'>Add your new item</button>
+            </form>
+        </div>
+        <div class="updateItem">
+            <div class="header">
+                <p>UPDATE ITEM</p>
+                <i class="fas fa-times" onclick="updateBox.classList.remove('active')"></i>
+            </div>
+            <form>
+                    <label for="nameupdate">Name:</label>
+                    <input id='nameupdate' type="text" placeholder="...">
+                
+                    <label for="priceupdate" style="margin-right: 20px">Price:</label>
+                    <input id='priceupdate' type="text" placeholder="...">
+                    
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <button class="randomUpdate">Change Img</button>
+                    <button id='upBtn'>Update your item</button>
+            </form>
+        </div>
+    </div>    
+<!-----------------------------------INPUT-BOX---------------------------------------- -->     
+
+ <!-----------------------------------HOME-SECTION---------------------------------------->    
+    
+    <section class="home">
+        <!-- ----------SWIPER-BACKGROUND------- -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="src/menu.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="src/menu1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="src/menu2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="src/menu3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        <!-- ----------SWIPER-BACKGROUND------- -->
+        <div class="container">
+            <div class='social-icons'>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></i></li>
+                    <li><a href=""><i class="fab fa-youtube-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="box-infor">
+                <h1>Lorem, ipsum dolor sit amet consectetur </h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <button>Check out <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+ <!-----------------------------------HOME-SECTION---------------------------------------- -->     
+    
+
+ <!-----------------------------------PRODUCTS-SECTION------------------------------------------>  
+    <section class="products">
+        <div class="container">
+            <div class="header">
+                <h2>PRODUCTS</h2>
+                <div class="search">
+                    <input type="text">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        </div>
+
+        <div class="container">
+            <div class="pagination wraper">
+                <ul>
+                  
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+  <!-----------------------------------PRODUCTS-SECTION------------------------------------------>  
+<!-----------------------------------ABOUT-SECTION------------------------------------------>  
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href=""><h2>#LOGO</h2></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Lorem ipsum dolor sit amet Incidunt corporis, in dolore quo sit quia quibusdam repudiandae soluta elig</p>
+                    <p>Lorem ipsum dolor sit amet Incidunt corporis, in dolore quo</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h2>Resource and Library</h2>
+                    <p> Swipper(For slide swip)</p>
+                    <p> Lorm Picsum (Make a random img)</p>
+                    <p>Grid of Bootstrap ( To custom Product section and...)</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                   <h2>Our social</h2>
+                   <div class='social-icons'>
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-square"></i> Our facebook</a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i> Our instagram</a></i></li>
+                            <li><a href=""><i class="fab fa-youtube-square"></i> Our youtube channle</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <h2>More information</h2>
+                  <p>Write down your email to get more update from us</p>
+                  <input type="email" placeholder="Email">
+                  <button>Subscride</button>
+                </div>    
+            </div>
+            
+        </div>
+        <p id='cc'>© 2021 My_Pure_Js_Project. All rights reserved.</p>
+    </section>
+<!-----------------------------------ABOUT-SECTION------------------------------------------>  
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src='src/swiper.js'></script>
+<script src='src/main.js'></script>
+</body>
+</html>

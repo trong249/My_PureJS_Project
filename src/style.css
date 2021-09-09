@@ -188,7 +188,7 @@ nav .fa-bars, nav .fa-times{
 
 
 /* ************************************SECTION-HOME************************************ */
-section.home {
+section#home {
     width: 100%;
     height: 100vh;
     z-index: -9;
@@ -196,37 +196,37 @@ section.home {
     font-size: 20px;
     margin-bottom: 50px;
 }
-section.home .swiper{
+section#home .swiper{
     width: 100%;
     height: 100vh;
     background-color: rgb(125, 125, 138);
     position: relative;
     z-index: 0;
 }
-section.home .swiper img{
+section#home .swiper img{
     width: 100%;
     height: 100vh;
 }
-section.home .container{
+section#home .container{
     position: relative;
 }
-section.home .social-icons{
+section#home .social-icons{
     position: absolute;
     right: 10px;
     bottom: 100px;
 }
-section.home .box-infor{
+section#home .box-infor{
     position: absolute;
     bottom: 250px;
     left: 5px;
     position: relative;
     z-index: 0;
 }
-section.home a{
+section#home a{
     color: #D0E6F5;
     font-size:20px;
 }
-section.home button{
+section#home button{
     background-color: #D0E6F5;
     padding: 10px 15px;
     border: 1px solid transparent;
@@ -237,11 +237,11 @@ section.home button{
     transition: all 0.2s;
     position:absolute;
 }
-section.home button:hover {
+section#home button:hover {
     padding: 11px 16px;
 }
 @media only screen and (max-width: 770px){
-    section.home .social-icons{
+    section#home .social-icons{
         bottom: 160px;
     }
 }
@@ -250,30 +250,30 @@ section.home button:hover {
 /* ************************************SECTION-HOME************************************ */
 
 /* ************************************SECTION-PRODUCT************************************ */
-.products{
+#products{
     margin-bottom: 50px;
 }
-.products .container:nth-child(2){
+#products .container:nth-child(2){
     height: 520px;
 }
-.products .row{
+#products .row{
     margin: 20px 0px;
 }
-.products .element{
+#products .element{
     position: relative;
     min-height: 150px;
 }
-.products .element .img{
+#products .element .img{
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
 }
-.products .element img{
+#products .element img{
     width: 100%;
     height: 100%;
 }
-.products .element .content {
+#products .element .content {
     padding: 7px 5px;
     background-color: rgba(0,0,0,0.4);;
     color: #fff;
@@ -283,42 +283,42 @@ section.home button:hover {
     width: 100%;
     border-radius: 10px;
 }
-.products .element .editIcon{
+#products .element .editIcon{
     font-size: 20px;
     position: absolute;
     top: 10px;
     left: 0px;
 }
-.products .element .editIcon i{
+#products .element .editIcon i{
     cursor: pointer;
     display: inline-block;
     margin-left:10px;
 }
 /* 888888888888888888888888888888888888888 */
-.products .container:nth-child(3){
+#products .container:nth-child(3){
     display: flex;
     justify-content: center;
 }
-.products .pagination ul{
+#products .pagination ul{
     display: flex;
 }
-.products .pagination ul li{
+#products .pagination ul li{
     font-size: 20px;
     margin: 0px 20px;
     line-height: 30px;
     cursor: pointer;
 }
-.products .pagination ul li.num{
+#products .pagination ul li.num{
     width: 30px;
     border-radius: 50%;
     text-align: center;
 }
-.products .pagination ul li.num.active{
+#products .pagination ul li.num.active{
     color: #fff;
     background-color: rgb(33, 46, 58);
 }
 @media only screen and (max-width: 770px){
-   .products .pagination ul li{
+   #products .pagination ul li{
     font-size: 20px;
     margin: 0px 5px;
     line-height: 30px;
@@ -329,7 +329,7 @@ section.home button:hover {
 
 
 /* ************************************SECTION-ABOUT************************************ */
-.about{
+#about{
     background-color: rgb(33, 46, 58);;
     box-shadow: 0px 0px 20px #6ba3bd; 
     padding-bottom: 10px;
@@ -337,24 +337,24 @@ section.home button:hover {
     font-size: 18px;
 }
 
-.about li a{
+#about li a{
     display: inline-block;
     color:hsla(0,0%,100%,.7);
     margin: 10px 0px;
 }
-.about a:hover{
+#about a:hover{
     color: #fff;
 }
-.about h2{
+#about h2{
     font-size: 25px;
     color: #fff;
     margin: 30px auto;
 }
-.about p{
+#about p{
     margin: 10px 0px;
     color:hsla(0,0%,100%,.7);
 }
-.about input {
+#about input {
     display: block;
     line-height: 25px;
     width: 100%;
@@ -363,7 +363,7 @@ section.home button:hover {
     outline: none;
     margin-bottom: 20px;
 }
-.about button{
+#about button{
     background-color: #D0E6F5;
     padding: 10px 15px;
     border: 1px solid transparent;
@@ -377,10 +377,10 @@ section.home button:hover {
     text-align: center;
 }
 @media only screen and (max-width: 575px){
-    .about .col-xs-12{
+    #about .col-xs-12{
         text-align: center;
     }   
-    .about button{
+    #about button{
         width: 100%;
     }
 }
